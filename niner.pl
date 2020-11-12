@@ -7,3 +7,7 @@ vegetable( X )
 
 mineral( X )
 	:- member( X, [anatase, basalt, cobolt, copper, galena, nickel, sodium, silver, zircon] ).
+
+% -- Question 1.2 -- %
+spell( W, X )
+	:- atom_chars( W, X ).
