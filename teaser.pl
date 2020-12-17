@@ -24,7 +24,8 @@ party( X, Y )
        number_chars( X, XL ), number_chars( Y, YL ),
        append( XL, YL, R ),
        unique( R ),
-       subtract( [1,2,3,4,5,6,7,8,9], R, [D|_] ),
+       subtract( ['1','2','3','4','5','6','7','8','9'], R, DL ),
+       number_chars( D, DL ),
        (X mod D =:= 0), (Y mod D =:= 0).
 
 % -- Question 2.4 -- %
