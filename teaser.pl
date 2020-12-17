@@ -21,11 +21,11 @@ pars( PARS )
 % -- Question 2.3 -- %
 party( X, Y )
     :- par( X ), par( Y ),
-       number_chars( X, X1 ), number_chars( Y, Y1 ),
-       append( X1, Y1, R ),
+       number_chars( X, XL ), number_chars( Y, YL ),
+       append( XL, YL, R ),
        unique( R ),
        subtract( [1,2,3,4,5,6,7,8,9], R, [D|_] ),
-       (X mod D =:= 0), (Y mod D =:= 0). % not sure why this line doesn't work
+       (X mod D =:= 0), (Y mod D =:= 0).
 
 % -- Question 2.4 -- %
 partys( PARTYS )
